@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/template/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Work from "./pages/Work";
+import Footer from "./components/template/Footer";
 
 export default function App() {
   const routes = [
@@ -20,6 +21,7 @@ export default function App() {
           <Route key={route.id} path={`${route.path}`} element={route.component} />
         ))}
       </Routes>
+      <Footer />
     </div>
   )
 }
