@@ -9,11 +9,11 @@ export default function Navbar() {
         {id: 4, path: "/contact", text: "Contact"},
     ];
     return (
-    <nav className="flex justify-between items-center px-12 py-1.5 sticky top-0 backdrop-blur-sm shadow-sm bg-white/40 w-full">
-        <Link to='/'> <h3 className="text-lg font-bold text-orange-400"> Mengkorng </h3> </Link>
-        <ul className="flex xl:gap-10 font-medium text-slate-800">
+    <nav className="flex justify-between items-center px-20 py-1.5 sticky top-0 backdrop-blur-sm shadow-sm bg-white/70 w-full">
+        <Link to='/'> <h3 className="text-lg font-bold "> Mengkorng Ly </h3> </Link>
+        <ul className="flex xl:gap-10 font-medium ">
             {menuItems.map(item => (
-                <li className="py-3 sticky top-0 hover:text-slate-900 active:text-orange-900 hover:font-medium transition-all" key={item.id}><Link to={`${item.path}`}>{item.text}</Link></li>
+                <li className="py-3 sticky top-0 hover:text-slate-700 transition-all" key={item.id}><Link to={`${item.path}`}>{item.text}</Link></li>
             ))}
         </ul>
         <div className="">
