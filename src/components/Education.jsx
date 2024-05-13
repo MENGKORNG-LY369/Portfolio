@@ -10,7 +10,7 @@ export default function Education() {
         <div className="flex gap-5 xl:flex-row sm:flex-col">
             {certificates.map(certificate => (
                 <div key={certificate.id} className="flex gap-4 xl:mx-auto sm:mx-0">
-                    <div className="rounded-lg bg-[#FFEF5C] w-9 h-9 flex justify-center items-center">
+                    <div className="rounded-lg bg-[#ffef5c] w-9 h-9 flex justify-center items-center">
                         {<certificate.image className="w-7 "/>}
                     </div>
                     <div className="flex flex-col">

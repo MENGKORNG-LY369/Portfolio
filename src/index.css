@@ -4,4 +4,10 @@
 
 :root{
     --main-color: #FFEF5C;
+    --main-bg-color: #FEF6EB;
+}
+
+.bg-image {
+    overflow: hidden;
+    border-radius: 80px 50px 10px 150px;
 }
