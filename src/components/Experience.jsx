@@ -1,22 +1,13 @@
-import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
+import SkillCard from "./card/SkillCard";
 
 
 export default function Experience() {
-  // const experiences = [
-    
-  // ];
+  const four = [1, 2, 3, 4];
   return (
-    <section className="flex justify-between py-5 ">
-      <div className="flex flex-col flex-1">
-        <h1 className="text-2xl mx-auto">Working Experience</h1>
-        <div className="flex flex-col">
-          <CodeBracketSquareIcon className="h-6 w-6 text-white"  />
-        </div>
-      </div>
-      <div className="flex flex-col flex-1">
-        <h1 className="text-2xl mx-auto">Working Experience</h1>
-        {/* <CodeBracketSquareIcon /> */}
-      </div>
+    <section className="grid xl:grid-cols-4 px-20 gap-6">
+      {four.map(one => (
+        <SkillCard key={one} titile="Hello world" text="Hello world from khmer" />
+      ))}
     </section>
   )
 }

@@ -1,30 +1,34 @@
-import { bootstrapLogo, cssLogo, htmlLogo, jsLogo, laravelLogo, phpLogo, pythonLogo, reactLogo, sassLogo, tailwindLogo, typescriptLogo, vueLogo } from "../assets/exporter";
+import { bootstrapLogo, gitHub, htmlCss, jiraLogo, jsLogo, laravelLogo, mysqlLogo, phpLogo, pythonLogo, sassLogo, tailwindLogo, typescriptLogo } from "../assets/exporter";
+import SkillCard from "./card/SkillCard";
 
 export default function Skill() {
     const skills = [
-        {id: 1, name: "HTML", src: htmlLogo },
-        {id: 2, name: "CSS", src: cssLogo },
-        {id: 3, name: "Sass", src: sassLogo },
-        {id: 4, name: "JavaScript", src: jsLogo },
-        {id: 5, name: "TypeScript", src: typescriptLogo },
-        {id: 6, name: "Bootstrap", src: bootstrapLogo },
-        {id: 7, name: "Tailwindcss", src: tailwindLogo },
-        {id: 8, name: "Python", src: pythonLogo },
-        {id: 9, name: "PHP", src: phpLogo },
-        {id: 10, name: "React JS", src: reactLogo },
-        {id: 11, name: "Vue JS", src: vueLogo },
-        {id: 12, name: "Laravel", src: laravelLogo },
-    ]
+        {id: 1, name: "HTML & CSS", image: htmlCss, style: 'w-[105px]'},
+        {id: 12, name: "Sass", image: sassLogo, style: 'w-[105px]'},
+        {id: 2, name: "Python", image: pythonLogo, style: 'w-[75px]'},
+        {id: 3, name: "JavaScript", image: jsLogo, style: 'w-[75px]'},
+        {id: 7, name: "TypeScript", image: typescriptLogo, style: 'w-[75px]'},
+        {id: 5, name: "Bootstrap", image: bootstrapLogo, style: 'w-[75px]'},
+        {id: 6, name: "Tailwindcss", image: tailwindLogo, style: 'w-[75px]'},
+        {id: 11, name: "GitHub", image: gitHub, style: 'w-[75px]'},
+        {id: 8, name: "Jira", image: jiraLogo, style: 'w-[75px]'},
+        {id: 4, name: "MySql", image: mysqlLogo, style: 'w-[75px]'},
+        {id: 9, name: "PHP", image: phpLogo, style: 'w-[75px]'},
+        {id: 10, name: "Laravel", image: laravelLogo, style: 'w-[75px]'},
+    ];
   return (
-    <div className="mt-10 grid xl:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-10 overflow-y-hidden overflow-x-auto">
-        {skills.map(skill => (
-            <div className="flex flex-col gap-1 items-center justify-between" key={skill.id}>
-                {skill.name == "Tailwindcss" ? 
-                (<img className="w-24 hover:drop-shadow-2xl" src={skill.src} alt={skill.name} />) : 
-                <img className="w-16 hover:drop-shadow-2xl" src={skill.src} alt={skill.name} />}
-                <span className="font-light">{skill.name}</span> 
-            </div>
-        ))}
-    </div>
+    <section className="py-5">
+        <h2 className="text-2xl font-medium text-center underline decoration-[#FFEF5C]">Expertises</h2>
+        <div className="mt-5 grid xl:grid-cols-6 md:grid-cols-3 grid-cols-2 xl:gap-10 md:gap-5 sm:gap-3 gap-2 overflow-y-hidden overflow-x-auto">
+            {skills.map(skill => (
+                <SkillCard 
+                    key={skill.id}
+                    image={skill.image} 
+                    title={skill.name} 
+                    style={skill.style}
+                />
+            ))}
+        </div>
+    </section>
   )
 }
