@@ -11,7 +11,7 @@ export default function Navbar() {
     ];
     
     return (
-    <nav className="flex justify-between items-center xl:px-20 lg:px-10 md:px-6 px-3 py-1.5 sticky top-0 backdrop-blur-sm shadow-sm bg-white/70 w-full">
+    <nav className="flex justify-between items-center xl:px-20 lg:px-10 md:px-6 px-3 py-1.5 sticky top-0 backdrop-blur-sm shadow-sm bg-white/70 w-full z-50">
         <Link to='/'> <h3 className="text-lg font-bold "> Mengkorng Ly </h3> </Link>
         <ul className="flex xl:gap-10 lg:gap-8 md:gap-5 gap-4 font-medium ">
             {menuItems.map(item => (
@@ -19,7 +19,10 @@ export default function Navbar() {
             ))}
         </ul>
         <div className="">
-            <TalkBtn text="Let`s talk" />
+            <TalkBtn 
+                text="Let`s talk" 
+                className="rounded-sm font-medium"
+            />
         </div>
     </nav>
     )
