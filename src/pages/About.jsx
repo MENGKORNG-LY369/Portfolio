@@ -2,7 +2,9 @@ import AboutMe from "../components/AboutMe";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
-import Skill from "../components/Skill";
+import HardSkill from "../components/HardSkill";
+import SotfSkill from "../components/SotfSkill";
+import Reference from "../components/Reference";
 
 export default function About() {
   return (
@@ -10,9 +12,11 @@ export default function About() {
       <Header />
       <div className="">
         <AboutMe />
-        <Skill />
+        <HardSkill />
+        <SotfSkill />
         <Education />
         <Experience />
+        <Reference />
       </div>
     </>
   );

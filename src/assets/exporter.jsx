@@ -14,5 +14,6 @@ export { default as tailwindLogo } from './logo/tailwind-css.png';
 export { default as mysqlLogo } from './logo/mysql.png';
 export { default as jiraLogo } from './logo/jira.png';
 export { default as gitHub } from './logo/github.png';
+export { default as nodeJs } from './logo/nodeJs.png';
 
 export { default as checkIcon } from './icons/check.png';

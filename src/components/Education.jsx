@@ -7,12 +7,12 @@ export default function Education() {
     ]
   return (
     <div className="py-10">
-        <h2 className="text-2xl mb-3 font-medium text-slate-700">Education Background</h2>
-        <div className="flex gap-5 xl:flex-row sm:flex-col">
+        <h2 className="text-2xl mb-5 font-medium text-slate-700 text-center ">Education Background</h2>
+        <div className="flex gap-10 xl:flex-row sm:flex-col">
             {certificates.map(certificate => (
-                <div key={certificate.id} className="flex items-center flex-1 gap-4 sm:mx-0 p-4 border-l-4 border-yellow-400 bg-yellow-100">
-                    <div className="rounded-md bg-slate-200 w-9 h-9 flex justify-center items-center">
-                        {<certificate.image className="w-7 text-teal-400 "/>}
+                <div key={certificate.id} className="flex items-center flex-1 gap-4 sm:mx-0 p-4 border-l-4 border-yellow-400 bg-yellow-50">
+                    <div className="rounded-md bg-white w-9 h-9 flex justify-center items-center">
+                        {<certificate.image className="w-7 text-yellow-400 "/>}
                     </div>
                     <div className="flex flex-col">
                         <h2 className="text-[20px]">{certificate.name}</h2>
