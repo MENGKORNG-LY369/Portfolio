@@ -37,7 +37,7 @@ export default function Experience() {
                 { id: 2, list: <span>Worke as a team that had three members.</span> },
                 { id: 3, list: <span>Responsible as a <b>team leader</b>.</span> },
                 { id: 4, list: <span>Version control: <b>GitHub</b></span> },
-                { id: 5, list: <span>Website: <a target="_blank" className="text-slate-600 underline" href="https://my-first-hosting.vercel.app/">https://my-first-hosting.vercel.app/</a></span> },
+                { id: 5, list: <span>Website: <a target="_blank" className="text-slate-600 underline" href="https://pet-shop-c5.vercel.app/PAGES/service.html">https://pet-shop-c5.vercel.app/PAGES/service.html</a></span> },
             ]
         },
     ];
